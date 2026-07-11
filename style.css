@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    background-image: url(p.pg.jpg);
+    background-size: 214vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+
+    width: 500px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: white;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .3);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+
+}
+
+.weather-card h1 {
+
+    margin-bottom: 25px;
+
+    font-size: 30px;
+
+}
+
+.search-box {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+.search-box input {
+
+    width: 260px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    outline: none;
+
+    font-size: 16px;
+
+}
+
+.search-box button {
+
+    width: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: white;
+
+    color: #0072ff;
+
+    font-size: 18px;
+
+    transition: .3s;
+
+}
+
+.search-box button:hover {
+
+    transform: scale(1.1);
+
+}
+
+.weather-image img {
+
+    width: 80px;
+
+    height: 80px;
+
+}
+
+#temperature {
+
+    font-size: 25px;
+
+    margin: 10px 0;
+
+}
+
+#cityName {
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+
+}
+
+.details {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+.box {
+
+    background: rgba(255, 255, 255, .2);
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    transition: .3s;
+
+}
+
+.box:hover {
+
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, .3);
+
+}
+
+.box h4 {
+
+    margin: 10px 0;
+
+}
+
+.box p {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+@media(max-width:50px) {
+
+    .weather-card {
+
+        width: 95%;
+
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #temperature {
+
+        font-size: 50px;
+
+    }
+
+}
+
+#dateTime {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
